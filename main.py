@@ -8,6 +8,9 @@ for cat in configs['torrents']['categories']:
         if len(torrents) > 0:
             all_torrents[cat].extend(torrents)
 
+    if len(all_torrents[cat]) < 1:
+        del all_torrents[cat]
+        
 if all_torrents:
     send_email({'torrents': all_torrents})
     print("Email sent")
