@@ -1,5 +1,12 @@
 ## KAT2EMAIL
-__Parses Kick Ass Torrents for new Torrents and emails them__   
+__Monitors Kick Ass Torrents for new Torrents and emails them__   
+
+### What does it do?
+
+I am a big fan of several TV series which I watch from torrents. Kick Ass Torrents is my favorite service for tracking new torrents. It gets a little hard sometimes to repeatedly check KAT for new episodes of my favorite series. So I decided to automate the task. 
+
+When you run `python main.py` it scrapes the torrents available in the `types` (eg. tv, movies, animes) you choose and matches with a set of `keywords` you defined. If there are new torrents available, it sends you an email with the list. It uses MongoDB for storing which torrent it has already emailed. 
+
 
 ### Requirements 
 
@@ -10,6 +17,14 @@ You need to install the dependencies using `pip`
 
 	pip install -r requirements.txt
 	
+
+### Running
+
+Execute `main.py`: 
+
+	python main.py
+	
+You should add the script to a cron job for repeatedly checking. 
 
 ### Configuration
 
