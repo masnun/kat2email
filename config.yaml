@@ -1,21 +1,21 @@
 torrents:
     source: http://kickass.to
-    types: #tv, movies, music, games, applications, anime, books, lossless
+    types: # Available options: tv, movies, music, games, applications, anime, books, lossless
         - tv
         - movies
     keywords:
         - big
         - person of interest
+        - flash
+        - arrow
 
     pages: 3
 
 
 email:
-    name: Masnun
-    to: masnun@gmail.com
+    to: Masnun <masnun@gmail.com>
     subject: New Torrents Available
-    from: noreply@tardis.dev
-    fromName: Torrent Bot
+    from: Torrent Bot <noreply@tardis.dev>
     template: template.html
     smtp:
         host: localhost
