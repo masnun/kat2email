@@ -17,8 +17,8 @@ except Exception as exc:
     sys.exit()
 
 
-def get_url(type_, page):
-    return configs['torrents']['source'] + "/{type}/{page}/".format(type=type_, page=page)
+def get_url(cat, page):
+    return configs['torrents']['source'] + "/{cat}/{page}/".format(cat=cat, page=page)
 
 
 def get_html(url):
@@ -57,8 +57,8 @@ def parse_torrents(html):
     return torrents
 
 
-def get_torrents(type_, page):
-    url = get_url(type_, page)
+def get_torrents(cat, page):
+    url = get_url(cat, page)
     html = get_html(url)
     torrents = parse_torrents(html)
 

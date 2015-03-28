@@ -5,7 +5,7 @@ __Monitors Kick Ass Torrents for new Torrents and emails them__
 
 I am a big fan of several TV series which I watch from torrents. Kick Ass Torrents is my favorite service for tracking new torrents. It gets a little hard sometimes to repeatedly check KAT for new episodes of my favorite series. So I decided to automate the task. 
 
-When you run `python main.py` it scrapes the torrents available in the `types` (eg. tv, movies, animes) you choose and matches with a set of `keywords` you defined. If there are new torrents available, it sends you an email with the list. It uses MongoDB for storing which torrent it has already emailed. 
+When you run `python main.py` it scrapes the torrents available in the `categories` (eg. tv, movies, animes) you choose and matches with a set of `keywords` you defined. If there are new torrents available, it sends you an email with the list. It uses MongoDB for storing which torrent it has already emailed. 
 
 
 ### Requirements 
@@ -35,7 +35,7 @@ Here are the summary of available configuration options.
 
 __Torrents__:
 
-Choose the `type` of torrents you would like to monitor and choose the `keywords` you want to look for. You can also choose the number of `pages` it should monitor (it helps in the case of less popular items) and the `source` url (in case the domain changes or you want to use a KAT proxy). 
+Choose the `categories` of torrents you would like to monitor and choose the `keywords` you want to look for. You can also choose the number of `pages` it should monitor (it helps in the case of less popular items) and the `source` url (in case the domain changes or you want to use a KAT proxy). 
 
 
 __Email__: 

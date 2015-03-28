@@ -1,6 +1,6 @@
 torrents:
     source: http://kickass.to
-    types: # Available options: tv, movies, music, games, applications, anime, books, lossless
+    categories: # Available options: tv, movies, music, games, applications, anime, books, lossless
         - tv
         - movies
     keywords:
