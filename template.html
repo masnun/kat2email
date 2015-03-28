@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Torrents</title>
+</head>
+<body>
+{% for type in torrents %}
+    {% if torrents[type]|count() > 0  %}
+        <h3>{{ type }}</h3>
+        {% for torrent in torrents[type] %}
+        <a href="{{ torrent.link }}">{{ torrent.title }}</a><br/>
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+</body>
+</html>

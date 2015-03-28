@@ -1,0 +1,32 @@
+torrents:
+    source: http://kickass.to
+    types: #tv, movies, music, games, applications, anime, books, lossless
+        - tv
+        - movies
+    keywords:
+        - big
+        - person of interest
+
+    pages: 3
+
+
+email:
+    name: Masnun
+    to: masnun@gmail.com
+    subject: New Torrents Available
+    from: noreply@tardis.dev
+    fromName: Torrent Bot
+    template: template.html
+    smtp:
+        host: localhost
+        port: 25
+        username:
+        password:
+
+
+mongo:
+    host: localhost
+    port: 27017
+    database: kat2mail
+    collection: torrents
+
